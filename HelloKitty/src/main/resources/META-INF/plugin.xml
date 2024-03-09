@@ -8,14 +8,18 @@
   <name>HelloKitty</name>
 
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-  <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="242447@edu.p.lodz.pl" url="https://example.site.com">ZZPJ</vendor>
 
   <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
        Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
   <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    Provides developers with cat photos.<br>
+    <br>
+    Features: This plugin provides additional options in tools and editor dropdown: Show Me a Cat! which, upon clicking, will redirect
+    to the web browser to show you a cat.<br>
+    <br>
+    <em>Gotta Catch 'Em All!</em>
   ]]></description>
 
   <!-- Product and plugin compatibility requirements.
@@ -27,4 +31,21 @@
   <extensions defaultExtensionNs="com.intellij">
 
   </extensions>
+
+  <actions>
+    <action
+            id="ZZPJPlugin.HelloKitty.ToolsMenu"
+            class="pl.zzpj.hellokitty.Prompt"
+            text="Show Me a Cat!"
+            description="Take a break from your work and see a cute cat!">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+    </action>
+    <action
+            id="ZZPJPlugin.HelloKitty.Editor"
+            class="pl.zzpj.hellokitty.Prompt"
+            text="Show Me a Cat!"
+            description="Take a break from your work and see a cute cat!">
+      <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+    </action>
+  </actions>
 </idea-plugin>
