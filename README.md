@@ -35,7 +35,7 @@ git clone https://github.com/pkwiatkowski242447/ZZPJ-Plugin.git
 
 ## Functionality overview
 
-
+A GIF presenting this plugin functionality can be found on the main branch of this repository, named ZZPJ-Plugin.gif. (It could not be put in the README.md since its too large!).
 
 ## Contributing
 
